@@ -90,5 +90,6 @@ export default defineConfig({
     stderr: 'pipe',
     stdout: 'pipe',
     timeout: process.env.CI ? (5 * 60_000) : 60_000,
+    ignoreHTTPSErrors: true,
   },
 });
