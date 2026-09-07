@@ -89,7 +89,8 @@ export default defineConfig({
     reuseExistingServer: !process.env.CI,
     stderr: 'pipe',
     stdout: 'pipe',
-    timeout: process.env.CI ? (5 * 60_000) : 60_000,
+    // Local Aspire startup can exceed one minute, and its HTTP readiness endpoint can redirect through a development HTTPS certificate.
+    timeout: process.env.CI ? (5 * 60_000) : (3 * 60_000),
     ignoreHTTPSErrors: true,
   },
 });
