@@ -1,0 +1,12 @@
+.git
+.vs
+**/.git
+**/.vs
+**/bin
+**/obj
+**/artifacts
+**/.env
+**/.env.*
+**/*.user
+**/*.pfx
+**/*.key

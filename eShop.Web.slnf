@@ -2,6 +2,8 @@
   "solution": {
     "path": "eShop.slnx",
     "projects": [
+      "samples\\DeploymentProbe\\DeploymentProbe.csproj",
+      "tests\\DeploymentProbe.Tests\\DeploymentProbe.Tests.csproj",
       "src\\Basket.API\\Basket.API.csproj",
       "src\\Catalog.API\\Catalog.API.csproj",
       "src\\EventBusRabbitMQ\\EventBusRabbitMQ.csproj",
